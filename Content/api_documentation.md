@@ -72,7 +72,24 @@ Example:
 
 GitHub applies different rate limits based on authentication. Unauthenticated requests are limited to 60 per hour, while authenticated requests with a personal access token allow up to 5.000 per hour. To optimize API usage and avoid rate limiting, it's recommended to generate a fine-grained, repository-scoped personal access token from GitHub by navigating to Settings > Developer settings > Personal access tokens.
 
+A correct authentication, comes with the code 200, iclueding a response with information about the autorized account, as "login","id", or "avatar_url".
+
+For other hand a bad authentication, comes with the code 401 {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"},
+It is reccomendable to check the variables BASE_URL nad TOKEN, previously created.
+
 ## Rate limits
+
+The rate limits cna be cheked trough the functions:
+- handle_rate_limit (response) the main function of theis cell is to get the time of wait in the case of the status code "403 Forbidden" or "429 Too Many Requests"
+- Also trought a print("Remaining:", response.headers.get("X-RateLimit-Remaining")) it is possible to obteain the number of available reequests
+
 ## Pagination strategy
+The strategy for pagination is established in the funcion 
+- paginate_repositories(query, max_pages=3, per_page=30)
+Parameters:
+  - query (str): The search keywords and filters (e.g., "language:python stars:>500"). (Uses GitHub's search syntax)
+  - max_pages (int, optional): The maximum number of pages to request. Each page contains up to per_page results. (default: 3)
+  - per_page (int, optional): Number of repositories to retrieve per page (max: 100). (default: 30)
+This funcuion bsesides loopp paginated is recommenden for bulk extraction and more advanced analytics in terms of fate
 
 
