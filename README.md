@@ -26,4 +26,11 @@ This repository contains my work for the Data Source API Analyst position assign
 - Handle authentication, rate limits, and pagination
 
 ## Reflection
-prog
+
+This assignment was a valuable step forward in my development as a data professional. It allowed me to explore the practicality and impact that APIs can offer to businesses making possible to obtain real-time data collection on any topic related to a given website.
+
+I gained a deeper understanding of the intrinsic limitations of APIs, especially around authentication, which opens the door for more complex and secure analysis. I also improved my perspective as a developer by considering the final user experience, thinking ahead about potential issues and how to troubleshoot them effectively.
+
+Working with .json formats helped me expand my skills with Pandas, particularly in data wrangling, as JSON isn't always the most analysis-friendly structure. Additionally, I improved my ability to create clear and intuitive documentation using Markdown, which is essential for communicating insights.
+
+Overall, this was a rewarding experience that strengthened my technical and analytical abilities. I look forward to applying this knowledge in future projects.
