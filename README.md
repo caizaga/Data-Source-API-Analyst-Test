@@ -34,3 +34,7 @@ I gained a deeper understanding of the intrinsic limitations of APIs, especially
 Working with .json formats helped me expand my skills with Pandas, particularly in data wrangling, as JSON isn't always the most analysis-friendly structure. Additionally, I improved my ability to create clear and intuitive documentation using Markdown, which is essential for communicating insights.
 
 Overall, this was a rewarding experience that strengthened my technical and analytical abilities. I look forward to applying this knowledge in future projects.
+
+## Link to the Google Colab .ipynb
+
+https://colab.research.google.com/drive/1Xabvsk3Y19a8qRu_6KJWft_SBGpZcx79?usp=sharing
