@@ -10,9 +10,16 @@ Base URL: [https://api.github.com](https://api.github.com)
 
 Note: The BASE_URL variable should remain unchanged for this implementation.
 
+To run this project, you need to authenticate with the GitHub API using a Personal Access Token (PAT).
+
+Create a file named `.env` in the root of the project (next to `README.md`), with the following content:
+
+GITHUB_TOKEN="your_personal_access_token_here"
+
 ## 1. Endpoints used
 
 ### 1.1. Search Public Repositories
+
 Endpoint: GET /search/repositories
 
 Full URL: [//api.github.com/search/repositories](https://api.github.com/search/repositories)
@@ -27,6 +34,7 @@ Parameters:
 **Note**: The function automatically constructs the endpoint URL using the provided parameters based on client requirements.
 
 ### 1.2. Commits
+
 Endpoint: GET /repos/{owner}/{repo}/commits
 
 Full URL: [https://api.github.com/repos/{owner}/{repo}/commits](https://api.github.com/repos/{owner}/{repo}/commits
@@ -44,6 +52,7 @@ Parameters:
 - page (optional): Page number for pagination
 
 ### 1.3. Contents: 
+
 Endpoint: GET /repos/{owner}/{repo}/contents/{path}
 
 Full URL: [https://api.github.com/repos/{owner}/{repo}/contents/{path}](https://api.github.com/repos/{owner}/{repo}/contents/{path}
@@ -147,4 +156,3 @@ This funcuion bsesides loopp paginated is recommenden for bulk extraction and mo
 - Monitor Rate Limits: Check remaining requests before making bulk operations
 - Implement Pagination: Use pagination functions for large datasets
 - Efficient Queries: Use specific search filters to reduce unnecessary API calls
-
