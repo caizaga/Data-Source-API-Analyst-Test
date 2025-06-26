@@ -56,7 +56,8 @@ Parameters:
 - ref (optional): Branch, tag, or commit SHA (default: main branch)
 
 ### 4. Request/response formats and function reserences
-  search_repositories(query, sort="stars", order="desc", per_page=30)
+
+#### 4.1. search_repositories(query, sort="stars", order="desc", per_page=30)
 
 Purpose: Searches for repositories, can be sorted and ordered.
 
@@ -73,7 +74,7 @@ Output example:
 
 <img src="/Content/Images/ex1.png" alt="My Diagram" width="400"/>
 
-  get_repository_commits(owner, repo, per_page=30)
+#### 4.2. get_repository_commits(owner, repo, per_page=30)
 
 Purpose: Searches for commits in the repository.
 
@@ -89,7 +90,7 @@ Output example:
 
 <img src="/Content/Images/ex2.png" alt="My Diagram" width="400"/>
 
-  get_repository_contents(owner, repo, path="")
+#### 4.3. get_repository_contents(owner, repo, path="")
 
 Purpose: Searches for specific items and contents in the repository.
 
