@@ -68,6 +68,7 @@ Parameters:
   - per_page (int, optional): Number of results per page (max: 100). (default: 30).
 
 Example:
+
   repo_1 = search_repositories("tetris language:assembly", per_page=5, sort = 'name', order="asc")
 
 Output example: 
@@ -84,6 +85,7 @@ Parameters:
   - per_page (int, optional): Number of commits to retrieve per page (max: 100). (default: 30).
 
 Example:
+
   comm_1 = get_repository_commits("kirjavascript", 'TetrisGYM', per_page=1)
 
 Output example: 
@@ -100,6 +102,7 @@ Parameters:
   - path (str, optional): The file or directory path inside the repository to retrieve contents from. Use an empty string ("") to get the root directory. (default: "").
 
 Example:
+
   repo_content1 = get_repository_contents("kirjavascript", 'TetrisGYM', path="README.md")
 
 Output example: 
