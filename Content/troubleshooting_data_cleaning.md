@@ -2,6 +2,8 @@
 
 ## Troubleshooting
 
+### 1.1. Rate Limit Errors (403 & 429)
+
 ### Erros 403 and 429: The errors "403 Forbidden" and "429 Too Many Requests", are commonly related to the number of request por hour, as mentioned aerlier, this rate depends or the aithentication. For this reason is recoomended to autienticate trough personal access token, to obtain more request per hour, in case of deplete the numer of request it is possible to obtain the ammounif waiting time to make more request.
 
 For this particular task the variable "BASE_URL" should not be modified.
