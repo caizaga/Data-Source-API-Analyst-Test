@@ -75,12 +75,11 @@ Output: Pandas DataFrame with cleaned repository data including standardized col
 - Creation date
 - Last update date
 
-Example:
+Function usage:
 
-repo_results = search_repositories("python machine learning", per_page=50)
+clean_repo_df = clean_repos_data(repo_1)
 
-# Function usage
-clean_repo_df = clean_repos_data(repo_results)
+<img src="/Content/Images/ex4.png" alt="My Diagram" width="400"/>
 
 #### 2.2 Commit Data Cleaning
 
@@ -100,10 +99,9 @@ Output: Pandas DataFrame with cleaned commit data including:
 - Commit message
 - File changes information
 
-Example:
+Function usage:
 
-clean_commit_df = clean_commits_data(commit_results)
-
-# Function usage
 clean_repo_df = clean_repos_data(repo_results)
+
+<img src="/Content/Images/ex5.png" alt="My Diagram" width="400"/>
 
