@@ -56,7 +56,7 @@ Parameters:
 - ref (optional): Branch, tag, or commit SHA (default: main branch)
 
 ### 4. Request/response formats and function reserences
-#### search_repositories(query, sort="stars", order="desc", per_page=30)
+  search_repositories(query, sort="stars", order="desc", per_page=30)
 
 Purpose: Searches for repositories, can be sorted and ordered.
 
@@ -69,7 +69,11 @@ Parameters:
 Example:
   repo_1 = search_repositories("tetris language:assembly", per_page=5, sort = 'name', order="asc")
 
-#### get_repository_commits(owner, repo, per_page=30)
+Output example: 
+
+<img src="/Content/Images/ex1.png" alt="My Diagram" width="400"/>
+
+  get_repository_commits(owner, repo, per_page=30)
 
 Purpose: Searches for commits in the repository.
 
@@ -81,7 +85,11 @@ Parameters:
 Example:
   comm_1 = get_repository_commits("kirjavascript", 'TetrisGYM', per_page=1)
 
-#### get_repository_contents(owner, repo, path="")
+Output example: 
+
+<img src="/Content/Images/ex2.png" alt="My Diagram" width="400"/>
+
+  get_repository_contents(owner, repo, path="")
 
 Purpose: Searches for specific items and contents in the repository.
 
@@ -93,6 +101,10 @@ Parameters:
 Example:
   repo_content1 = get_repository_contents("kirjavascript", 'TetrisGYM', path="README.md")
 
+Output example: 
+
+<img src="/Content/Images/ex3.png" alt="My Diagram" width="400"/>
+
 ### 5. Authentication method
 
 GitHub applies different rate limits based on authentication. Unauthenticated requests are limited to 60 per hour, while authenticated requests with a personal access token allow up to 5.000 per hour. To optimize API usage and avoid rate limiting, it's recommended to generate a fine-grained, repository-scoped personal access token from GitHub by navigating to Settings > Developer settings > Personal access tokens.
@@ -101,7 +113,11 @@ Response Codes
 
 ✅ Success (200): Valid authentication with account information ("login", "id", "avatar_url")
 
+<img src="/Content/Images/ex6.png" alt="My Diagram" width="400"/>
+
 ❌ Failure (401): {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest","status":"401"}
+
+<img src="/Content/Images/ex7.png" alt="My Diagram" width="400"/>
 
 ### 6. Rate limits
 
